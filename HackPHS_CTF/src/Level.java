@@ -7,6 +7,7 @@ public class Level
 	public Level(int l, int w, String b)
 	{
 		Entity ground = new Entity(b, l, w, 0, 0);
+		entities.add(ground);
 		StdDraw.setCanvasSize(l, w);
 	}
 	
