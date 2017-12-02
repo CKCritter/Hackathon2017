@@ -28,15 +28,15 @@ public class Vector {
 	}*/
 	
 	public double dotProd(Vector other) {
-		return this.x * other.x + this.y * other.y;
+		return this.x * other.getX() + this.y * other.getY();
 	}
 	
 	public Vector plus(Vector other) {
-		return new Vector(this.x + other.x, this.y + other.y);
+		return new Vector(this.x + other.getX(), this.y + other.getY());
 	}
 	
 	public Vector minus(Vector other) {
-		return new Vector(this.x - other.x, this.y - other.y);
+		return new Vector(this.x - other.getX(), this.y - other.getY());
 	}
 	
 	public Vector times(double k) {
