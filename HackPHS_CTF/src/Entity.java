@@ -36,4 +36,10 @@ public class Entity {
 	public double distance (Entity other) {
 		return Math.sqrt((other.getX() - x) * (other.getX() - x) + (other.getY() - y) * (other.getY() - y));
 	}
+	
+	public void move(Vector v)
+	{
+		x += v.getSpeed() * (x - v.getX());
+		y += v.getSpeed() * (y - v.getY());
+	}
 }

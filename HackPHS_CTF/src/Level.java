@@ -11,13 +11,14 @@ public class Level
 		StdDraw.setCanvasSize(l, w);
 	}
 	
+	@SuppressWarnings("deprecation")
 	public void render()
 	{
 		for(int i = 0; i < entities.size(); i++)
 		{
 			entities.get(i).draw();
 		}
-		StdDraw.show();
+		StdDraw.show(20);
 	}
 	
 	public void move(Entity e, Vector v)

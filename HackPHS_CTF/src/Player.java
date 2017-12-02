@@ -10,6 +10,27 @@ public class Player extends Entity {
 		vec = v;
 	}
 	
-	
+	public void checkMovement()
+	{
+		int x = 0;
+		int y = 0;
+		
+		if(StdDraw.isKeyPressed(87))
+		{
+			x += 1;
+		}
+		if(StdDraw.isKeyPressed(83))
+		{
+			x -= 1;
+		}
+		if(StdDraw.isKeyPressed(65))
+		{
+			y += 1;
+		}
+		if(StdDraw.isKeyPressed(68))
+		{
+			y -= 1;
+		}
+	}
 	
 }

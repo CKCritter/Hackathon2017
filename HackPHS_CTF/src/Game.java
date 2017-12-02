@@ -4,6 +4,10 @@ public class Game
 	{
 		Level l = new Level(500, 500, "Images/Big Ground.png");
 		l.render();
+		while(true)
+		{
+			StdDraw.isKeyPressed(StdDraw.);
+		}
 	}
 	
 	

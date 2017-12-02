@@ -3,13 +3,13 @@ public class Vector {
 	
 	private double x;
 	private double y;
-	//private double speed;
+	private double speed;
 	
-	public Vector(double x, double y)
+	public Vector(double x, double y, double speed)
 	{
 		this.x = x;
 		this.y = y;
-		//this.speed = speed;
+		this.speed = speed;
 	}
 	
 	public double getX()
@@ -22,10 +22,10 @@ public class Vector {
 		return y;
 	}
 	
-	/*public double getSpeed()
+	public double getSpeed()
 	{
 		return speed;
-	}*/
+	}
 	
 	public double dotProd(Vector other) {
 		return this.x * other.getX() + this.y * other.getY();
