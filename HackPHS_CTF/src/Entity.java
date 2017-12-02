@@ -28,4 +28,12 @@ public class Entity {
 	public double getY() {
 		return y;
 	}
+	
+	public String getImage() {
+		return image;
+	}
+	
+	public double distance (Entity other) {
+		return Math.sqrt((other.getX() - x) * (other.getX() - x) + (other.getY() - y) * (other.getY() - y));
+	}
 }
