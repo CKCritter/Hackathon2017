@@ -47,7 +47,7 @@ public class Vector {
 		return Math.sqrt(this.x*this.x + this.y*this.y);
 	}
 	
-	public double angle() {
+	public double angle() { 
 		return Math.atan(this.y / this.x);
 	}
 }
