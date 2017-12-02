@@ -3,7 +3,7 @@ public class Level
 	private final int LENGTH;
 	private final int WIDTH;
 	private String background;
-	//private Entity[] entities;
+	private Entity[] entities;
 			
 	public Level(int l, int w, String b)
 	{
@@ -16,12 +16,16 @@ public class Level
 	public void render()
 	{
 		StdDraw.picture(0, 0, background);
-		for(int i = 0; i < e.length; i++)
+		for(int i = 0; i < entities.length; i++)
 		{
-			StdDraw.picture(entities[i].getX(), entities[i].getY(), entities[i].getImage);
+			entities[i].draw();
 		}
 		StdDraw.show();
 	}
 	
-	public void move(entity)
+	public void move(Entity e, Vector v)
+	{
+		
+	}
+	}
 }
