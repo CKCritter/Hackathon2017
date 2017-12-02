@@ -48,6 +48,6 @@ public class Vector {
 	}
 	
 	public double angle() {
-		return Math.atan(this.y / this.x);
+		return Math.atan(this.y / this.x); 
 	}
 }
