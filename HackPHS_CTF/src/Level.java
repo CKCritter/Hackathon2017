@@ -1,24 +1,20 @@
+import java.util.ArrayList;
+
 public class Level
 {
-	private final int LENGTH;
-	private final int WIDTH;
-	private String background;
-	private Entity[] entities;
+	private ArrayList<Entity> entities = new ArrayList<Entity>();
 			
 	public Level(int l, int w, String b)
 	{
-		LENGTH = l;
-		WIDTH = w;
-		background = b;
-		StdDraw.setCanvasSize(LENGTH, WIDTH);
+		Entity ground = new Entity(b, l, w, 0, 0);
+		StdDraw.setCanvasSize(l, w);
 	}
 	
 	public void render()
 	{
-		StdDraw.picture(0, 0, background);
-		for(int i = 0; i < entities.length; i++)
+		for(int i = 0; i < entities.size(); i++)
 		{
-			entities[i].draw();
+			entities.get(i).draw();
 		}
 		StdDraw.show();
 	}
@@ -27,5 +23,9 @@ public class Level
 	{
 		
 	}
+	
+	public void addEntity(Entity e)
+	{
+		entities.add(e);
 	}
 }
